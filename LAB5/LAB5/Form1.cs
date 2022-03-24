@@ -8,7 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 /*
- * 
+ Name: Nguyen Duc
+Date: 22nd March,2022
+LAB 5
+URL: https://github.com/ndmd21101/the-real-solution
  */
 
 namespace LAB5
