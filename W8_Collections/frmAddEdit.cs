@@ -10,50 +10,14 @@ using System.Windows.Forms;
 
 namespace W8_Collections
 {
-    public partial class frmMain : Form
+    public partial class frmAddEdit : Form
     {
-        public frmMain()
+        public frmAddEdit()
         {
             InitializeComponent();
         }
-
-        #region GLOBAL VARS
-        List<String> Planets = new List<String>();
-        #endregion
-
-        #region EVENT HANDLERS
-        /// <summary>
-        /// Main form loading commands
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void frmMain_Load(object sender, EventArgs e)
-        {
-            PopulatePlanets();
-            cboPlanets.DataSource = Planets;
-
-        }
-
-        private void btnSetHairColour_Click(object sender, EventArgs e)
-        {
-            colorDialog1.ShowDialog();
-            lblHairColour.BackColor = colorDialog1.Color;
-        }
-
-        private void btnSetEyeColour_Click(object sender, EventArgs e)
-        {
-            colorDialog1.ShowDialog();
-            lblEyeColour.BackColor = colorDialog1.Color;
-        }
-
-        private void btnReset_Click(object sender, EventArgs e)
-        {
-            SetDefaults();
-        }
-
-        #endregion
-
-        #region CUSTOM METHODS
+        List<Strings> Planets = new List<Strings>();
+        #region Custom Methods
         private void PopulatePlanets()
         {
             Planets.Add("Alderaan");
@@ -84,17 +48,19 @@ namespace W8_Collections
             nudDesignation.Value = 0;
             chkDefective.Checked = false;
         }
-
         #endregion
 
-        
-        
 
 
-    
-        private void btnSave_Click(object sender, EventArgs e)
+        private void lblTrooperLabel_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void frmAddEdit_Load(object sender, EventArgs e)
+        {
+            PopulatePlanets();
+            this.cboPlanets.DataSource = Planets;
         }
     }
 }

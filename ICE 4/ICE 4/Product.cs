@@ -8,7 +8,7 @@ using System.Drawing;
 namespace ICE_4
 {
     
-    class Products
+    public class Product
     {
         
         #region PROPERTIES
@@ -26,7 +26,7 @@ namespace ICE_4
         /// <summary>
         /// Default Constructor - by Duc
         /// </summary>
-        public Products()
+        public Product()
         {
            
         }
@@ -40,7 +40,7 @@ namespace ICE_4
         /// <param name="size"></param>
         /// <param name="primaryColor"></param>
         /// <param name="secondaryColor"></param>
-        public Products(int quantity, String category, String productName, String size, Color primaryColor, Color secondaryColor)
+        public Product(int quantity, String category, String productName, String size, Color primaryColor, Color secondaryColor)
         {
             // TODO: Add data validation here if needed
             Quantity = quantity;
@@ -65,15 +65,15 @@ namespace ICE_4
         /// </summary>
         /// <returns></returns>
         
-        public static List<Products> GetSampleProducts()
+        public static List<Product> GetSampleProduct()
         {
-            List<Products> returnList = new List<Products>();
+            List<Product> returnList = new List<Product>();
 
-            returnList.Add(new Products(12, "Tops", "Striped T-Shirt", 
+            returnList.Add(new Product(12, "Tops", "Striped T-Shirt", 
                             "M",  Color.White, Color.Orange));
-            returnList.Add(new Products(53, "Hoodies & Sweatshirts", "Fleece Hoodie", 
+            returnList.Add(new Product(53, "Hoodies & Sweatshirts", "Fleece Hoodie", 
                             "XL",  Color.White, Color.Red));
-            returnList.Add(new Products(25, "Joggers & Sweatpants", "George Cargo Jogger", 
+            returnList.Add(new Product(25, "Joggers & Sweatpants", "George Cargo Jogger", 
                                         "S", Color.LightGreen, Color.WhiteSmoke));
 
             return returnList;

@@ -1,15 +1,15 @@
 ﻿
 namespace W8_Collections
 {
-    partial class frmMain
+    partial class frmAddEdit
     {
         /// <summary>
-        ///  Required designer variable.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        ///  Clean up any resources being used.
+        /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
@@ -24,24 +24,15 @@ namespace W8_Collections
         #region Windows Form Designer generated code
 
         /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
-            this.dgvClones = new System.Windows.Forms.DataGridView();
-            this.colDesignation = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colNickName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colBorn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colDefective = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.colHairColor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colEyeColor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblTrooperLabel = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnReset = new System.Windows.Forms.Button();
-            this.btnSave = new System.Windows.Forms.Button();
+            this.btnSaveandContinue = new System.Windows.Forms.Button();
             this.chkDefective = new System.Windows.Forms.CheckBox();
             this.btnSetEyeColour = new System.Windows.Forms.Button();
             this.lblEyeColour = new System.Windows.Forms.Label();
@@ -59,109 +50,25 @@ namespace W8_Collections
             this.lblNickName = new System.Windows.Forms.Label();
             this.nudDesignation = new System.Windows.Forms.NumericUpDown();
             this.lblDesignation = new System.Windows.Forms.Label();
-            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
-            this.lblTitleBar = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvClones)).BeginInit();
+            this.btnSaveandExit = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudDesignation)).BeginInit();
             this.SuspendLayout();
             // 
-            // dgvClones
+            // lblTrooperLabel
             // 
-            this.dgvClones.AllowUserToAddRows = false;
-            this.dgvClones.AllowUserToDeleteRows = false;
-            this.dgvClones.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvClones.BackgroundColor = System.Drawing.Color.Black;
-            this.dgvClones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvClones.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.colDesignation,
-            this.colNickName,
-            this.dataGridViewTextBoxColumn1,
-            this.colBorn,
-            this.dataGridViewTextBoxColumn2,
-            this.colDefective,
-            this.colHairColor,
-            this.colEyeColor});
-            this.dgvClones.Location = new System.Drawing.Point(12, 39);
-            this.dgvClones.MultiSelect = false;
-            this.dgvClones.Name = "dgvClones";
-            this.dgvClones.ReadOnly = true;
-            this.dgvClones.RowHeadersVisible = false;
-            this.dgvClones.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.Black;
-            this.dgvClones.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.White;
-            this.dgvClones.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.dgvClones.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(210)))), ((int)(((byte)(0)))));
-            this.dgvClones.RowTemplate.Height = 25;
-            this.dgvClones.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvClones.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvClones.ShowEditingIcon = false;
-            this.dgvClones.Size = new System.Drawing.Size(911, 222);
-            this.dgvClones.TabIndex = 1;
-            this.dgvClones.VirtualMode = true;
-            // 
-            // colDesignation
-            // 
-            this.colDesignation.DataPropertyName = "Designation";
-            this.colDesignation.HeaderText = "Designation";
-            this.colDesignation.Name = "colDesignation";
-            this.colDesignation.ReadOnly = true;
-            // 
-            // colNickName
-            // 
-            this.colNickName.DataPropertyName = "NickName";
-            this.colNickName.HeaderText = "Nick Name";
-            this.colNickName.Name = "colNickName";
-            this.colNickName.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "HomeWorld";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Home World";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // colBorn
-            // 
-            this.colBorn.DataPropertyName = "Born";
-            this.colBorn.HeaderText = "Born";
-            this.colBorn.Name = "colBorn";
-            this.colBorn.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Unit";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Unit";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // colDefective
-            // 
-            this.colDefective.DataPropertyName = "Defective";
-            this.colDefective.HeaderText = "Defective";
-            this.colDefective.Name = "colDefective";
-            this.colDefective.ReadOnly = true;
-            // 
-            // colHairColor
-            // 
-            this.colHairColor.DataPropertyName = "HairColour";
-            this.colHairColor.HeaderText = "Hair Colour";
-            this.colHairColor.Name = "colHairColor";
-            this.colHairColor.ReadOnly = true;
-            // 
-            // colEyeColor
-            // 
-            this.colEyeColor.DataPropertyName = "EyeColour";
-            this.colEyeColor.HeaderText = "Eye Colour";
-            this.colEyeColor.Name = "colEyeColor";
-            this.colEyeColor.ReadOnly = true;
+            this.lblTrooperLabel.AutoSize = true;
+            this.lblTrooperLabel.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTrooperLabel.Location = new System.Drawing.Point(18, 0);
+            this.lblTrooperLabel.Name = "lblTrooperLabel";
+            this.lblTrooperLabel.Size = new System.Drawing.Size(90, 25);
+            this.lblTrooperLabel.TabIndex = 0;
+            this.lblTrooperLabel.Text = "Trooper:";
+            this.lblTrooperLabel.Click += new System.EventHandler(this.lblTrooperLabel_Click);
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.btnReset);
-            this.groupBox1.Controls.Add(this.btnSave);
             this.groupBox1.Controls.Add(this.chkDefective);
             this.groupBox1.Controls.Add(this.btnSetEyeColour);
             this.groupBox1.Controls.Add(this.lblEyeColour);
@@ -180,34 +87,32 @@ namespace W8_Collections
             this.groupBox1.Controls.Add(this.nudDesignation);
             this.groupBox1.Controls.Add(this.lblDesignation);
             this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(12, 285);
+            this.groupBox1.Location = new System.Drawing.Point(12, 28);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(447, 254);
-            this.groupBox1.TabIndex = 2;
+            this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Add/Edit";
             // 
             // btnReset
             // 
             this.btnReset.ForeColor = System.Drawing.Color.Black;
-            this.btnReset.Location = new System.Drawing.Point(285, 204);
+            this.btnReset.Location = new System.Drawing.Point(222, 288);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(75, 43);
             this.btnReset.TabIndex = 19;
             this.btnReset.Text = "&Reset";
             this.btnReset.UseVisualStyleBackColor = true;
-            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
-            // btnSave
+            // btnSaveandContinue
             // 
-            this.btnSave.ForeColor = System.Drawing.Color.Black;
-            this.btnSave.Location = new System.Drawing.Point(366, 204);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 43);
-            this.btnSave.TabIndex = 18;
-            this.btnSave.Text = "&Save";
-            this.btnSave.UseVisualStyleBackColor = true;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            this.btnSaveandContinue.ForeColor = System.Drawing.Color.Black;
+            this.btnSaveandContinue.Location = new System.Drawing.Point(303, 288);
+            this.btnSaveandContinue.Name = "btnSaveandContinue";
+            this.btnSaveandContinue.Size = new System.Drawing.Size(75, 43);
+            this.btnSaveandContinue.TabIndex = 18;
+            this.btnSaveandContinue.Text = "&Save and Continue";
+            this.btnSaveandContinue.UseVisualStyleBackColor = true;
             // 
             // chkDefective
             // 
@@ -228,7 +133,6 @@ namespace W8_Collections
             this.btnSetEyeColour.TabIndex = 16;
             this.btnSetEyeColour.Text = "Set";
             this.btnSetEyeColour.UseVisualStyleBackColor = true;
-            this.btnSetEyeColour.Click += new System.EventHandler(this.btnSetEyeColour_Click);
             // 
             // lblEyeColour
             // 
@@ -258,7 +162,6 @@ namespace W8_Collections
             this.btnSetHairColour.TabIndex = 13;
             this.btnSetHairColour.Text = "Set";
             this.btnSetHairColour.UseVisualStyleBackColor = true;
-            this.btnSetHairColour.Click += new System.EventHandler(this.btnSetHairColour_Click);
             // 
             // lblHairColour
             // 
@@ -365,86 +268,62 @@ namespace W8_Collections
             this.lblDesignation.TabIndex = 0;
             this.lblDesignation.Text = "Designation";
             // 
-            // lblTitleBar
+            // btnSaveandExit
             // 
-            this.lblTitleBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblTitleBar.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblTitleBar.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTitleBar.ForeColor = System.Drawing.Color.Black;
-            this.lblTitleBar.Location = new System.Drawing.Point(1, 1);
-            this.lblTitleBar.Name = "lblTitleBar";
-            this.lblTitleBar.Size = new System.Drawing.Size(933, 35);
-            this.lblTitleBar.TabIndex = 3;
-            this.lblTitleBar.Text = "Clone Inventory";
-            this.lblTitleBar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSaveandExit.ForeColor = System.Drawing.Color.Black;
+            this.btnSaveandExit.Location = new System.Drawing.Point(384, 288);
+            this.btnSaveandExit.Name = "btnSaveandExit";
+            this.btnSaveandExit.Size = new System.Drawing.Size(75, 43);
+            this.btnSaveandExit.TabIndex = 20;
+            this.btnSaveandExit.Text = "&Save and Exit";
+            this.btnSaveandExit.UseVisualStyleBackColor = true;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(482, 340);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // frmMain
+            // frmAddEdit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(935, 558);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.lblTitleBar);
+            this.BackColor = System.Drawing.SystemColors.WindowText;
+            this.ClientSize = new System.Drawing.Size(505, 396);
+            this.Controls.Add(this.btnSaveandExit);
+            this.Controls.Add(this.btnReset);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.dgvClones);
-            this.Name = "frmMain";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Droid Factory";
-            this.Load += new System.EventHandler(this.frmMain_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvClones)).EndInit();
+            this.Controls.Add(this.btnSaveandContinue);
+            this.Controls.Add(this.lblTrooperLabel);
+            this.ForeColor = System.Drawing.SystemColors.Control;
+            this.Name = "frmAddEdit";
+            this.Text = "frmAddEdit";
+            this.Load += new System.EventHandler(this.frmAddEdit_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudDesignation)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.DataGridView dgvClones;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colDesignation;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colNickName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colBorn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn colDefective;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colHairColor;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colEyeColor;
+
+        private System.Windows.Forms.Label lblTrooperLabel;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ComboBox cboPlanets;
-        private System.Windows.Forms.Label lblHomeWorld;
-        private System.Windows.Forms.TextBox txtNickName;
-        private System.Windows.Forms.Label lblNickName;
-        private System.Windows.Forms.NumericUpDown nudDesignation;
-        private System.Windows.Forms.Label lblDesignation;
-        private System.Windows.Forms.TextBox txtUnit;
-        private System.Windows.Forms.Label lblUnit;
-        private System.Windows.Forms.DateTimePicker dtpBorn;
-        private System.Windows.Forms.Label lblBorn;
+        private System.Windows.Forms.Button btnReset;
+        private System.Windows.Forms.Button btnSaveandContinue;
+        private System.Windows.Forms.CheckBox chkDefective;
         private System.Windows.Forms.Button btnSetEyeColour;
         private System.Windows.Forms.Label lblEyeColour;
         private System.Windows.Forms.Label lblSecondColourLabel;
         private System.Windows.Forms.Button btnSetHairColour;
         private System.Windows.Forms.Label lblHairColour;
         private System.Windows.Forms.Label lblColour1Label;
-        private System.Windows.Forms.Button btnReset;
-        private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.CheckBox chkDefective;
-        private System.Windows.Forms.ColorDialog colorDialog1;
-        private System.Windows.Forms.Label lblTitleBar;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtUnit;
+        private System.Windows.Forms.Label lblUnit;
+        private System.Windows.Forms.DateTimePicker dtpBorn;
+        private System.Windows.Forms.Label lblBorn;
+        private System.Windows.Forms.ComboBox cboPlanets;
+        private System.Windows.Forms.Label lblHomeWorld;
+        private System.Windows.Forms.TextBox txtNickName;
+        private System.Windows.Forms.Label lblNickName;
+        private System.Windows.Forms.NumericUpDown nudDesignation;
+        private System.Windows.Forms.Label lblDesignation;
+        private System.Windows.Forms.Button btnSaveandExit;
     }
 }
-

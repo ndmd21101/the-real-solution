@@ -7,7 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+//Name: Nguyen Duc
+//Date: 12th April, 2022
+//Github: https://github.com/ndmd21101/the-real-solution/tree/master/ICE%204
+//ICE 4
 namespace ICE_4
 {
     public partial class frmMain : Form
@@ -20,7 +23,8 @@ namespace ICE_4
         #region GLOBAL VARS
         List<String> Size = new List<String>();
         List<String> Category = new List<String>();
-        List<Products> Product = new List<Products>();
+        public static List<Product> Products = new List<Product>();
+        Boolean DoSelectionChange = true;
         #endregion
 
         #region EVENT HANDLERS
@@ -35,8 +39,10 @@ namespace ICE_4
             PopulateCategory();
             cboSize.DataSource = Size;
             cboCategory.DataSource = Category;
-            Product = Products.GetSampleProducts();
+            Products = Product.GetSampleProduct();
+            DoSelectionChange = false;
             PopulateProductList();
+            DoSelectionChange = true;
             
         }
 
@@ -79,10 +85,24 @@ namespace ICE_4
         {
             this.dgvProducts.DataSource = null;
             this.dgvProducts.ClearSelection();
-            this.dgvProducts.DataSource = Product;
+            this.dgvProducts.DataSource = Products;
             this.dgvProducts.ClearSelection();
         }
        
+
+        private void PopulateProduct(Product t)
+        {
+            this.nudQuantity.Value = t.Quantity;
+            this.txtName.Text = t.ProductName;
+            this.cboCategory.SelectedItem = t.Category;
+            this.cboSize.SelectedItem = t.Size;
+            this.lblPrimaryColor.BackColor = t.PrimaryColor;
+            this.lblSecondaryColor.BackColor = t.SecondaryColor;
+
+        }
+       
+
+
         #endregion
 
 
@@ -94,16 +114,15 @@ namespace ICE_4
 
        
         private void btnSave_Click_1(object sender, EventArgs e)
-        {
-            
-            Products t = new Products();
+        {  
+            Product t = new Product();
             t.Category = this.cboCategory.SelectedItem.ToString();
             t.Size = this.cboCategory.SelectedItem.ToString();
             t.Quantity = decimal.ToInt32(this.nudQuantity.Value);
             t.ProductName = this.txtName.Text.Trim();
             t.PrimaryColor = this.lblPrimaryColor.BackColor;
             t.SecondaryColor = this.lblSecondaryColor.BackColor;
-            Product.Add(t);
+            Products.Add(t);
             PopulateProductList();
             SetDefaults();
         }
@@ -124,6 +143,27 @@ namespace ICE_4
         private void btnReset_Click(object sender, EventArgs e)
         {
             SetDefaults();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAbout_Click(object sender, EventArgs e)
+        {
+            frmAbout newForm = new frmAbout();
+            newForm.ShowDialog();
+            newForm.Dispose();
+        }
+
+        private void dgvProducts_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dgvProducts.SelectedRows.Count > 0)
+            {
+                int selectedProduct = Convert.ToInt32(dgvProducts.SelectedRows[0].Cells[0].Value);
+                PopulateProduct(t);
+            }
         }
     }
 }

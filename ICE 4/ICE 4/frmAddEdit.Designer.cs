@@ -1,15 +1,15 @@
 ﻿
 namespace ICE_4
 {
-    partial class frmMain
+    partial class frmAddEdit
     {
         /// <summary>
-        ///  Required designer variable.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        ///  Clean up any resources being used.
+        /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
@@ -24,20 +24,11 @@ namespace ICE_4
         #region Windows Form Designer generated code
 
         /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
-            this.lblTitleBar = new System.Windows.Forms.Label();
-            this.dgvProducts = new System.Windows.Forms.DataGridView();
-            this.colProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colCategory = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colQuantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colSize = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colPrimaryColor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colSecondaryColor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnReset = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
@@ -55,89 +46,15 @@ namespace ICE_4
             this.nudQuantity = new System.Windows.Forms.NumericUpDown();
             this.cboCategory = new System.Windows.Forms.ComboBox();
             this.txtName = new System.Windows.Forms.TextBox();
-            this.colorDialog2 = new System.Windows.Forms.ColorDialog();
-            this.btnAbout = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).BeginInit();
+            this.btnSaveExit = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudQuantity)).BeginInit();
             this.SuspendLayout();
             // 
-            // lblTitleBar
-            // 
-            this.lblTitleBar.BackColor = System.Drawing.SystemColors.Highlight;
-            this.lblTitleBar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblTitleBar.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTitleBar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblTitleBar.Location = new System.Drawing.Point(0, 0);
-            this.lblTitleBar.Name = "lblTitleBar";
-            this.lblTitleBar.Size = new System.Drawing.Size(1003, 48);
-            this.lblTitleBar.TabIndex = 0;
-            this.lblTitleBar.Text = "Shopping Carts";
-            this.lblTitleBar.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // dgvProducts
-            // 
-            this.dgvProducts.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvProducts.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dgvProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvProducts.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.colProductName,
-            this.colCategory,
-            this.colQuantity,
-            this.colSize,
-            this.colPrimaryColor,
-            this.colSecondaryColor});
-            this.dgvProducts.GridColor = System.Drawing.SystemColors.Control;
-            this.dgvProducts.Location = new System.Drawing.Point(134, 51);
-            this.dgvProducts.Name = "dgvProducts";
-            this.dgvProducts.RowTemplate.Height = 25;
-            this.dgvProducts.Size = new System.Drawing.Size(702, 269);
-            this.dgvProducts.TabIndex = 1;
-            this.dgvProducts.SelectionChanged += new System.EventHandler(this.dgvProducts_SelectionChanged);
-            // 
-            // colProductName
-            // 
-            this.colProductName.DataPropertyName = "ProductName";
-            this.colProductName.HeaderText = "Product Name";
-            this.colProductName.Name = "colProductName";
-            this.colProductName.Width = 120;
-            // 
-            // colCategory
-            // 
-            this.colCategory.DataPropertyName = "Category";
-            this.colCategory.HeaderText = "Category";
-            this.colCategory.Name = "colCategory";
-            // 
-            // colQuantity
-            // 
-            this.colQuantity.DataPropertyName = "Quantity";
-            this.colQuantity.HeaderText = "Quantity";
-            this.colQuantity.Name = "colQuantity";
-            // 
-            // colSize
-            // 
-            this.colSize.DataPropertyName = "Size";
-            this.colSize.HeaderText = "Size";
-            this.colSize.Name = "colSize";
-            // 
-            // colPrimaryColor
-            // 
-            this.colPrimaryColor.DataPropertyName = "PrimaryColor";
-            this.colPrimaryColor.HeaderText = "Primary Color";
-            this.colPrimaryColor.Name = "colPrimaryColor";
-            this.colPrimaryColor.Width = 120;
-            // 
-            // colSecondaryColor
-            // 
-            this.colSecondaryColor.DataPropertyName = "SecondaryColor";
-            this.colSecondaryColor.HeaderText = "Secondary Color";
-            this.colSecondaryColor.Name = "colSecondaryColor";
-            this.colSecondaryColor.Width = 120;
-            // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.groupBox1.Controls.Add(this.btnSaveExit);
             this.groupBox1.Controls.Add(this.btnReset);
             this.groupBox1.Controls.Add(this.btnSave);
             this.groupBox1.Controls.Add(this.label6);
@@ -154,33 +71,31 @@ namespace ICE_4
             this.groupBox1.Controls.Add(this.nudQuantity);
             this.groupBox1.Controls.Add(this.cboCategory);
             this.groupBox1.Controls.Add(this.txtName);
-            this.groupBox1.Location = new System.Drawing.Point(36, 379);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(497, 219);
-            this.groupBox1.TabIndex = 2;
+            this.groupBox1.Size = new System.Drawing.Size(553, 277);
+            this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Add Items";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // btnReset
             // 
-            this.btnReset.Location = new System.Drawing.Point(311, 184);
+            this.btnReset.Location = new System.Drawing.Point(201, 184);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(75, 29);
+            this.btnReset.Size = new System.Drawing.Size(92, 47);
             this.btnReset.TabIndex = 16;
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = true;
-            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(213, 184);
+            this.btnSave.Location = new System.Drawing.Point(302, 184);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 29);
+            this.btnSave.Size = new System.Drawing.Size(92, 47);
             this.btnSave.TabIndex = 3;
-            this.btnSave.Text = "Save";
+            this.btnSave.Text = "&Save and Continue";
             this.btnSave.UseVisualStyleBackColor = true;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click_1);
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // label6
             // 
@@ -244,7 +159,6 @@ namespace ICE_4
             this.lblSecondaryColor.Name = "lblSecondaryColor";
             this.lblSecondaryColor.Size = new System.Drawing.Size(54, 45);
             this.lblSecondaryColor.TabIndex = 9;
-            this.lblSecondaryColor.Click += new System.EventHandler(this.lblSecondaryColor_Click);
             // 
             // btnSecondaryColor
             // 
@@ -264,7 +178,6 @@ namespace ICE_4
             this.lblPrimaryColor.Name = "lblPrimaryColor";
             this.lblPrimaryColor.Size = new System.Drawing.Size(54, 45);
             this.lblPrimaryColor.TabIndex = 7;
-            this.lblPrimaryColor.Click += new System.EventHandler(this.lblPrimaryColor_Click);
             // 
             // btnPrimaryColor
             // 
@@ -306,32 +219,26 @@ namespace ICE_4
             this.txtName.Size = new System.Drawing.Size(100, 23);
             this.txtName.TabIndex = 0;
             // 
-            // btnAbout
+            // btnSaveExit
             // 
-            this.btnAbout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnAbout.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnAbout.Location = new System.Drawing.Point(557, 409);
-            this.btnAbout.Name = "btnAbout";
-            this.btnAbout.Size = new System.Drawing.Size(145, 48);
-            this.btnAbout.TabIndex = 3;
-            this.btnAbout.Text = "&About";
-            this.btnAbout.UseVisualStyleBackColor = false;
-            this.btnAbout.Click += new System.EventHandler(this.btnAbout_Click);
+            this.btnSaveExit.Location = new System.Drawing.Point(403, 184);
+            this.btnSaveExit.Name = "btnSaveExit";
+            this.btnSaveExit.Size = new System.Drawing.Size(92, 47);
+            this.btnSaveExit.TabIndex = 17;
+            this.btnSaveExit.Text = "Save and &Exit";
+            this.btnSaveExit.UseVisualStyleBackColor = true;
+            this.btnSaveExit.Click += new System.EventHandler(this.btnSaveExit_Click);
             // 
-            // frmMain
+            // frmAddEdit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1002, 610);
-            this.Controls.Add(this.btnAbout);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(583, 318);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.dgvProducts);
-            this.Controls.Add(this.lblTitleBar);
-            this.Name = "frmMain";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.frmMain_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).EndInit();
+            this.Name = "frmAddEdit";
+            this.Text = "frmAddEdit";
+            this.Load += new System.EventHandler(this.frmAddEdit_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudQuantity)).EndInit();
@@ -341,15 +248,10 @@ namespace ICE_4
 
         #endregion
 
-        private System.Windows.Forms.Label lblTitleBar;
-        private System.Windows.Forms.DataGridView dgvProducts;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label lblPrimaryColor;
-        private System.Windows.Forms.Button btnPrimaryColor;
-        private System.Windows.Forms.ComboBox cboSize;
-        private System.Windows.Forms.NumericUpDown nudQuantity;
-        private System.Windows.Forms.ComboBox cboCategory;
-        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.Button btnSaveExit;
+        private System.Windows.Forms.Button btnReset;
+        private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
@@ -358,17 +260,11 @@ namespace ICE_4
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblSecondaryColor;
         private System.Windows.Forms.Button btnSecondaryColor;
-       
-        private System.Windows.Forms.Button btnReset;
-        private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colProductName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colCategory;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colQuantity;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colSize;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colPrimaryColor;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colSecondaryColor;
-        private System.Windows.Forms.ColorDialog colorDialog2;
-        private System.Windows.Forms.Button btnAbout;
+        private System.Windows.Forms.Label lblPrimaryColor;
+        private System.Windows.Forms.Button btnPrimaryColor;
+        private System.Windows.Forms.ComboBox cboSize;
+        private System.Windows.Forms.NumericUpDown nudQuantity;
+        private System.Windows.Forms.ComboBox cboCategory;
+        private System.Windows.Forms.TextBox txtName;
     }
 }
-
