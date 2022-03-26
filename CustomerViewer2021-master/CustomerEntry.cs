@@ -1,11 +1,12 @@
-﻿// Author:          Kyle Chapman
-// Last Modified:   March 11, 2021
+﻿// Author:          Duc Nguyen
+// Last Modified:   March 25, 2022
 // Description:
-//  Demo program for NETD 2202 based off of Class Exercise 4 in 2021.
+//  Demo program for NETD 2202 based off of Class Exercise 4 in 2022.
 //  Meant as an aid for Lab 4. Using an existing Customer class, this
 //  Windows form can display a list of customers and allow the user
 //  to add new customers to the list as well as edit existing customers
 //  selected from a ListView.
+// URL: https://github.com/ndmd21101/the-real-solution
 
 using System;
 using System.Collections.Generic;
