@@ -131,7 +131,7 @@ namespace LAB_1
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnReset;
-            this.ClientSize = new System.Drawing.Size(749, 446);
+            this.ClientSize = new System.Drawing.Size(340, 446);
             this.Controls.Add(this.lblCasesNumber);
             this.Controls.Add(this.lblOuput);
             this.Controls.Add(this.btnExit);
